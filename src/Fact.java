@@ -39,7 +39,7 @@ public class Fact {
 	}
 
 	public String toString() {
-		String res = this.predicate.toString();
+		String res = "";
 		res += "(";
 		
 		res += ")";
