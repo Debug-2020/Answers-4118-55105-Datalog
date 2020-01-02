@@ -81,14 +81,7 @@ public class Rule {
 	}
 
 	public String toString() {
-		String res = head.toString() + " :- ";
-		for (int i = 0; i < body.length - 1; i++) {
-			res += body[i].toString();
-			res += ",";
-		}
-		if (body.length > 0) {
-			res += body[body.length - 1].toString();
-		}
-		return res + ".";
+		
+		return  ".";
 	}
 }
