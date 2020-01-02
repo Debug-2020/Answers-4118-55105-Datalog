@@ -28,7 +28,7 @@ public class Substitution {
 	public Substitution extend(Variable variable, Value value) {
 		int index = from.indexOf(variable);
 		if (index != -1) { // There exists already a mapping for this variable.
-			return null; // same value, return null.
+			return new Substitution(this.from, this.to); // same value, return null.
 		}
 		Substitution s = new Substitution(this.from, this.to);
 		s.from.add(variable);
